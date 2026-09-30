@@ -4,13 +4,12 @@
 
 University Waste Tracker is a Python-based problem-solving project. It applies basic programming concepts to a real-world university waste-recording problem.
 
-The project is designed for CSE1021 and uses basic algorithms, functions, conditional statements, loops, lists, sets and dictionaries.
 
 ## 2. Problem Statement
 
-University waste is generated at multiple locations and in multiple categories. The quantity may be recorded manually, but calculating totals and comparing categories or locations repeatedly is time-consuming.
+University waste is generated at differnt locations and in categories. The quantity may be recorded manually, but calculating totals and comparing categories or locations repeatedly is time-consuming.
 
-The proposed program provides a simple computational solution for recording and analysing waste.
+The proposed program provides a simple solution for recording and analysing waste.
 
 ## 3. Objectives
 
@@ -87,7 +86,7 @@ Read Choice
   |
   +-- Other --> Show Error --> Display Menu
 
-## 8. Use Case Diagram
+## 8. Case Diagram
 
 User
  |
@@ -128,8 +127,6 @@ data.py    algorithms.py
 
 ## 11. Data Design
 
-A waste record is represented by a dictionary:
-
 {
     "date": "30-09-2026",
     "location": "Canteen",
@@ -138,9 +135,6 @@ A waste record is represented by a dictionary:
 }
 
 All records are stored in a Python list.
-
-Categories are stored in a Python list.
-University locations are stored in a Python list.
 Unique dates/categories can be obtained using a Python set.
 
 ## 12. Algorithms
@@ -201,10 +195,9 @@ UNTIL choice = 7
 
 END
 
-## 14. Testing Approach
+## 14. Testing 
 
 | Test | Input | Expected Result |
-|---|---|---|
 | 1 | Menu 2 | Existing records displayed |
 | 2 | Valid waste record | Record added |
 | 3 | Quantity 0 | Quantity rejected |
@@ -227,36 +220,30 @@ With the included sample records:
 
 ## 16. Design Decisions and Rationale
 
-A list is used to store multiple records because Python list operations are part of the syllabus.
+A list is used to store multiple records .
 
-A dictionary is used for each record because it provides a simple way to associate fields such as date, location, category and quantity.
+A dictionary is used for each record because it provides a simple way to access fields such as date, location, category and quantity.
 
 Functions divide the solution into smaller tasks and demonstrate modular programming.
 
 Loops are used for repeated input and calculations.
 
-No external library or database is used so that the implementation remains within the requested course scope.
 
 ## 17. Challenges Faced
 
 1. Designing a useful real-world problem using basic programming only.
 2. Organising records using lists and dictionaries.
 3. Calculating multiple reports without advanced libraries.
-4. Validating user input using basic Python statements.
 
 ## 18. Learnings and Key Takeaways
 
 - A real-world problem can be converted into smaller programming tasks.
 - Top-down design helps divide a program into functions.
-- Lists and dictionaries can represent practical data.
-- Loops can perform repeated calculations.
-- Simple algorithms such as counting, summation and maximum finding are useful for data analysis.
+- Lists and dictionaries can be used for practical data.
+- Loops can do repeated calculations.
 
 ## 19. Future Enhancements
 
-Future versions could include permanent storage, graphical interface and more advanced analysis. These are intentionally outside the current implementation because the project is restricted to the CSE1021 syllabus.
+Future versions could include permanent storage, graphical interface and more advanced analysis. 
 
-## 20. References
 
-1. CSE1021 Introduction to Problem Solving and Programming - provided course syllabus.
-2. VITyarthi Build Your Own Project - provided project instructions.
