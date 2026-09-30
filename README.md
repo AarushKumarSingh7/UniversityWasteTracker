@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-University Waste Tracker is a simple Python console application for recording and analysing waste generated at different locations of a university.
+University Waste Tracker is a  Python console application for recording and analysing waste generated at different locations of a university.
 
 
 ## 2. Problem
@@ -80,4 +80,4 @@ Test cases are included in `report.md`.
 
 ## 10. Scope
 
-This is a basic academic project. Records are stored in memory while the program is running. A database, GUI and web application are intentionally not included because they are outside the requested CSE1021 syllabus scope.
+This is a basic academic project. Records are stored in memory while the program is running.
