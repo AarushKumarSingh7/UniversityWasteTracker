@@ -5,7 +5,6 @@ def get_positive_number():
     while True:
         value = input("Enter quantity in kg: ")
 
-        # Simple input validation without external modules.
         if value.replace(".", "", 1).isdigit():
             quantity = float(value)
             if quantity > 0:
