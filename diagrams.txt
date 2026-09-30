@@ -1,0 +1,107 @@
+UNIVERSITY WASTE TRACKER - DESIGN DIAGRAMS
+
+1. SYSTEM ARCHITECTURE
+
+User
+ |
+ v
+main.py
+ |----------------------|
+ v                      v
+tracker.py           reports.py
+ |                      |
+ v                      v
+data.py             algorithms.py
+ |
+ v
+Lists / Dictionaries / Sets
+
+
+2. WORKFLOW
+
+START
+ |
+ v
+Display Menu
+ |
+ v
+Read Choice
+ |
+ +--> Add Record --> Validate --> Append to List --+
+ |                                                  |
+ +--> View Records --------------------------------+
+ |                                                  |
+ +--> Total Report --------------------------------+
+ |                                                  |
+ +--> Category Report -----------------------------+
+ |                                                  |
+ +--> Location Report -----------------------------+
+ |                                                  |
+ +--> Date Report ---------------------------------+
+ |                                                  |
+ +--> Exit --> END
+ |
+ +--> Invalid Choice --> Error --> Menu
+
+
+3. USE CASE DIAGRAM
+
+                  +-----------------------------+
+                  |     University Waste        |
+                  |          Tracker            |
+                  +-----------------------------+
+                     ^       ^       ^
+                     |       |       |
+                  +--+-------+-------+--+
+                  |        User         |
+                  +----------------------+
+                  | Add record           |
+                  | View records         |
+                  | Total report         |
+                  | Category report      |
+                  | Location report      |
+                  | Date report          |
+                  | Exit                 |
+                  +----------------------+
+
+
+4. SEQUENCE DIAGRAM
+
+User -> main.py: Select option
+main.py -> tracker.py: Add/display record
+tracker.py -> data.py: Read categories/locations
+tracker.py -> main.py: Return result
+main.py -> reports.py: Request report
+reports.py -> algorithms.py: Calculate result
+algorithms.py -> reports.py: Return result
+reports.py -> main.py: Return report
+main.py -> User: Display result
+
+
+5. COMPONENT DIAGRAM
+
++-----------+
+| main.py   |
++-----+-----+
+      |
+ +----+----+
+ |         |
+ v         v
+tracker   reports
+ |         |
+ v         v
+data   algorithms
+
+
+6. DATA STRUCTURE
+
+records = [
+    {
+      "date": "...",
+      "location": "...",
+      "category": "...",
+      "quantity": ...
+    }
+]
+
+This project intentionally uses in-memory Python data structures.
