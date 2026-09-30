@@ -1,4 +1,4 @@
-# Fundamental algorithms used in the waste tracker.
+# algorithms used in the waste tracker.
 
 
 def summation(numbers):
@@ -32,7 +32,6 @@ def count_items(items, target):
 
 
 def remove_duplicates(items):
-    # Set is used because sets are part of the course syllabus.
     unique_items = list(set(items))
     return unique_items
 
