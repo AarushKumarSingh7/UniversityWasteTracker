@@ -1,5 +1,4 @@
 # Basic data structures used by the project.
-# No external library or database is required.
 
 CATEGORIES = ["Plastic", "Paper", "Food", "Metal", "Glass", "Other"]
 
@@ -14,7 +13,7 @@ LOCATIONS = [
 
 
 def create_sample_data():
-    # Each waste record is represented using a dictionary.
+    
     records = [
         {
             "date": "30-09-2026",
