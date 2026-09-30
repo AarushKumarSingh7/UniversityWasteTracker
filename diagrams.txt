@@ -1,4 +1,4 @@
-UNIVERSITY WASTE TRACKER - DESIGN DIAGRAMS
+DESIGN DIAGRAMS
 
 1. SYSTEM ARCHITECTURE
 
@@ -104,4 +104,3 @@ records = [
     }
 ]
 
-This project intentionally uses in-memory Python data structures.
