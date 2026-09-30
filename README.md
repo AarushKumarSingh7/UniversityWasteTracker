@@ -4,11 +4,10 @@
 
 University Waste Tracker is a simple Python console application for recording and analysing waste generated at different locations of a university.
 
-The project is designed strictly around the concepts in **CSE1021 - Introduction to Problem Solving and Programming**.
 
 ## 2. Problem
 
-A university generates different types of waste in places such as the canteen, hostel, academic block, library and sports area. Without a simple record and calculation system, it is difficult to know the amount and type of waste generated.
+A university generates different types of waste in places such as the canteen, hostel, academic block 1,2 and architecture , library and sports area. Without a simple record and calculation system, it is difficult to know the amount and type of waste generated.
 
 ## 3. Solution
 
@@ -20,9 +19,8 @@ The program allows a user to:
 - Calculate location-wise waste.
 - Calculate date-wise waste.
 
-## 4. CSE1021 Concepts Used
+## 4.Concepts Used
 
-Only basic syllabus concepts are used:
 - Problem solving and top-down design
 - Algorithms
 - Flow of execution
@@ -33,14 +31,12 @@ Only basic syllabus concepts are used:
 - for and while loops
 - break
 - Python lists
-- tuples (concept can be discussed in design)
+- tuples
 - sets
 - dictionaries
 - array-style counting and maximum finding
 - summation
 - simple input/output
-
-No external Python libraries are required.
 
 ## 5. Files
 
@@ -54,13 +50,11 @@ No external Python libraries are required.
 
 ## 6. How to Run
 
-Install Python 3.
+Install Python .
 
 Open the project folder in a terminal and run:
 
     python main.py
-
-No package installation is required.
 
 ## 7. Input
 
@@ -78,6 +72,7 @@ The program displays:
 - Category-wise waste
 - Location-wise waste
 - Date-wise waste
+- 
 
 ## 9. Testing
 
